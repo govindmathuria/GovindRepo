@@ -62,7 +62,7 @@ var argv = require('yargs')
 		}).help('help');
 	})
 	.help('help')
-	.argv;
+	.argv; 
 var command = argv._[0];
 
 // create
@@ -78,7 +78,7 @@ var command = argv._[0];
 // account.password Password123!
 
 function GetAccounts(masterPasword){
-	
+
 	console.log('create account called');
 	var encryptedAccount =storage.getItemSync('accounts');
 	var accounts=[];
